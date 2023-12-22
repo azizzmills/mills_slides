@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/mills_slides/static/css/main.5d299495.css",
+    "main.js": "/mills_slides/static/js/main.f5a86701.js",
+    "static/js/787.0d6c8283.chunk.js": "/mills_slides/static/js/787.0d6c8283.chunk.js",
+    "static/media/adidas.png": "/mills_slides/static/media/adidas.e04653f215137f36a999.png",
+    "static/media/nike.png": "/mills_slides/static/media/nike.952e499d7f25caf784bc.png",
+    "static/media/logo.svg": "/mills_slides/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/mills_slides/index.html",
+    "main.5d299495.css.map": "/mills_slides/static/css/main.5d299495.css.map",
+    "main.f5a86701.js.map": "/mills_slides/static/js/main.f5a86701.js.map",
+    "787.0d6c8283.chunk.js.map": "/mills_slides/static/js/787.0d6c8283.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d299495.css",
+    "static/js/main.f5a86701.js"
+  ]
+}
