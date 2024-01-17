@@ -7,8 +7,8 @@ import Cart from './components/Cart'
 function App() {
   return(      
       <Routes>              
-        <Route exact path="/" element={Content}/>
-        <Route exact path="/Cart" element={Cart}/>        
+        <Route exact path="/" element={<Content/>}/>
+        <Route exact path="/Cart" element={<Cart/>}/>        
       </Routes>  
   );
 }
