@@ -1,15 +1,19 @@
 import React from "react";
 import './library.json'
-import {Col, Row, Container} from 'react-bootstrap'
-import Adidas from './images/selector_img/adidas.png'
-import Nike from './images/selector_img/nike.png'
-import Jordans from './images/selector_img/jordan.png'
+import {Col, Row, Container, Button} from 'react-bootstrap'
+import Adidas from './images/Adidas-logo.png'
+import Nike from './images/nike logo.jpg'
+import Jordans from './images/jordan logo.png'
 import Navbar from "./Navbar";
 import './Content.css'
 import shoe_library from './library.js'
 import Footer from "./Footer";
 
 const Content = () => {
+    const sendToCart = () =>{
+        
+    }
+   
     return(
         <Container>
             <Row className="mb-5">
@@ -45,46 +49,51 @@ const Content = () => {
             <Row>                
               {shoe_library.nike.map((item, index)=>{
                 return(
-                    <Col>
+                    <Col className="pt-3">
                       <div className="item_box" key={index}> 
                         <div className="bg-img">
-                            <img src={item.picture} alt="" className="size"/>
+                            <img src={item.picture} alt="" className="pic_size"/>
                             </div>                           
                             {item.name}<br/>
                             {item.price}<br/>
                             {item.size}                            
                        </div>
+                       <Button className="add_To_Cart" onclick={sendToCart}>Add to Cart</Button>
                     </Col>)                       
                     })}                   
             </Row>
-            <Row>                
+            <Row>               
               {shoe_library.adidas.map((item, index)=>{
                 return(
-                    <Col>
+                    <Col className="pt-3">
                       <div className="item_box" key={index}> 
-                        {/*<div className="bg-img">
-                            <img src={item.picture} alt="" className="size"/>
-                </div>*/}                           
+                        <div className="bg-img">
+                            <img src={item.picture} alt="" className="pic_size"/>
+                        </div> 
+                        <div className="item_content">
                             {item.name}<br/>
-                            {item.price}<br/>
-                            {item.size}                            
+                            ${item.price}<br/>
+                            Size :  {item.size}                             
+                        </div>                         
                        </div>
+                       <Button className="add_To_Cart">Add to Cart</Button>
                     </Col>)                       
                     })}                   
             </Row>
             <Row>                
               {shoe_library.jordans.map((item, index)=>{
                 return(
-                    <Col>
+                    <Col className="pt-3 pb-3">
                       <div className="item_box" key={index}> 
-                        {/*<div className="bg-img">
-                            <img src={item.picture} alt="" className="size"/>
-                </div>*/}                           
+                        <div className="bg-img">
+                            <img src={item.picture} alt="" className="pic_size"/>
+                        </div>                          
                             {item.name}<br/>
                             {item.price}<br/>
                             {item.size}                            
                        </div>
-                    </Col>)                       
+                       <Button className="add_To_Cart">Add to Cart</Button>
+                    </Col >)                       
                     })}                   
             </Row>  
             <Row>

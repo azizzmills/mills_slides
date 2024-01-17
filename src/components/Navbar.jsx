@@ -3,10 +3,10 @@ import React, { useState }from "react";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import Cart from "./Cart_Modal";
+import './Navbar.css'
 
 const Navigationbar = () => {
-  
+  {/*
     const [showModal, setShowModal] = useState(false);
   
     const handleModalShow = () => {
@@ -15,16 +15,17 @@ const Navigationbar = () => {
   
     const handleModalClose = () => {
       setShowModal(false);
-    };
+    }; 
+  */}
     return (
-      <Navbar expand="lg" className="bg-body-tertiary">
-      {/*<Container>*/}
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+      <Navbar expand="lg" id="navbar-color" >
+      {/*<Container>    className="bg-body-tertiary"*/}
+        <Navbar.Brand className="p-3" href="#home">React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">User Manual</Nav.Link>
-            <Nav.Link href="#">Cart</Nav.Link>
+            <Nav.Link to="/">Home</Nav.Link>
+            <Nav.Link to="/Cart">Cart</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
